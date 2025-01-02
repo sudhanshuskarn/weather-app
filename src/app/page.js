@@ -37,19 +37,37 @@ export default function HomePage() {
 
   // Fetch default location when the page loads
   useEffect(() => {
-    const fetchLocation = async () => {
+  const fetchLocation = async () => {
+    try {
+      // First attempt to fetch location from ipinfo.io directly on the client-side
+      const response = await fetch('https://ipinfo.io/json');
+
+      if (!response.ok) {
+        // If the client-side fetch fails (likely due to CORS), fall back to server-side
+        throw new Error('CORS issue, falling back to server-side');
+      }
+
+      const data = await response.json();
+      setLocation(data.city || 'Delhi');
+      setLoading(false);
+    } catch (clientError) {
+      // If there's a CORS issue or other error, make a request to the server-side API route
+      setError('Failed to fetch location from client. Trying server-side...');
+      setLoading(true);
       try {
-        const response = await fetch('/api/location'); // Call the API that provides the default location
-        const data = await response.json();
-        setLocation(data.location); // Set the default location from the API
-      } catch (error) {
-        setError("Failed to fetch location");
+        const serverResponse = await fetch('/api/location');  // Server-side fallback
+        const serverData = await serverResponse.json();
+        setLocation(serverData.location || 'Unknown location');
+        setLoading(false);
+      } catch (serverError) {
+        setError('Failed to fetch location from server');
         setLoading(false);
       }
-    };
+    }
+  };
 
-    fetchLocation();
-  }, []); // Empty dependency array to run only once when the page loads
+  fetchLocation();  // Call the function to fetch location when the component mounts
+}, []);  // Empty dependency array to run only once when the page loads
 
   // Fetch weather when location is available
   useEffect(() => {

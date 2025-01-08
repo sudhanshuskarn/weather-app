@@ -10,9 +10,9 @@ To get started with the development server, follow these steps:
 
 First, clone the repository to your local machine:
 
-`bash
+`nano`
 git clone https://github.com/sudhanshuskarn/weather-app.git
-cd weather-app`
+cd weather-app
 
 
 ### 2. Get API key

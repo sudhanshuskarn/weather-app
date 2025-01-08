@@ -4,6 +4,7 @@ This is a **Weather App** built with [Next.js](https://nextjs.org) that fetches 
 
 ## Getting Started
 
+Make sure node is installed in your system.
 To get started with the development server, follow these steps:
 
 ### 1. Clone the Repository
@@ -23,7 +24,7 @@ Use Openweathermap for API key.
 
 ### 3. Make changes in your local repository you just cloned.
 
-You can customise it.
+You can customize it.
 
 
 ### 4. Check links and API key is properly referred.

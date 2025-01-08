@@ -38,6 +38,6 @@ Check for routes and variable names which have API assigned.
 your-name@your-name-desktop:~$ npm run dev
 ```
 
-** click to open link shown in console.**
+#### click to open link shown in console.
 
 ### That's all.

@@ -14,7 +14,7 @@ First, clone the repository to your local machine:
 git clone https://github.com/sudhanshuskarn/weather-app.git
 cd weather-app
 
-##
+
 ### 2. Get API key
 
 Use Openweathermap for API key.

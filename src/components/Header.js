@@ -79,7 +79,7 @@ export default function Header() {
             </li>
             <li>
               <Link href="/weather" className="hover:text-gray-300">
-                Weather
+                Weather-Map
               </Link>
             </li>
           </ul>
@@ -127,7 +127,7 @@ export default function Header() {
                 </li>
                 <li>
                   <Link href="/weather" className="hover:text-gray-300" onClick={toggleMenu}>
-                    Weather
+                    Weather-Map
                   </Link>
                 </li>
               </ul>

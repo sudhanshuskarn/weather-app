@@ -11,8 +11,8 @@ To get started with the development server, follow these steps:
 First, clone the repository to your local machine:
 
 ```console
-your-name@your-name:~$ git clone https://github.com/sudhanshuskarn/weather-app.git
-cd weather-app
+your-name@your-name-desktop:~$ git clone https://github.com/sudhanshuskarn/weather-app.git
+your-name@your-name-desktop:~$ cd weather-app
 ```
 
 
@@ -34,8 +34,9 @@ Check for routes and variable names which have API assigned.
 ### 5. Run to **View Live Site**
 
 
-```bash
-npm run dev
+```console
+your-name@your-name-desktop:~$ npm run dev
+```
 
 ** click to open link shown in console.
 

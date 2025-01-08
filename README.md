@@ -20,6 +20,7 @@ your-name@your-name-desktop:~$ cd weather-app
 ### 2. Get API key
 
 Use Openweathermap for API key.
+Add api_key to .env* file.
 
 
 ### 3. Make changes in your local repository you just cloned.

@@ -11,5 +11,5 @@ To get started with the development server, follow these steps:
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/sudhanshuskarn/weather-app.git
 cd weather-app

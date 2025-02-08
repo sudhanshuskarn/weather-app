@@ -63,22 +63,22 @@ export default function Header() {
         <nav className="hidden lg:flex flex-row space-x-6 text-left items-center">
           <ul className="flex flex-row space-x-6 text-white">
             <li>
-              <Link href="/" className="hover:text-gray-300">
+              <Link href="/" className="hover:text-purple-900">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/about" className="hover:text-gray-300">
+              <Link href="/about" className="hover:text-purple-900">
                 About
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-gray-300">
+              <Link href="/contact" className="hover:text-purple-900">
                 Contact
               </Link>
             </li>
             <li>
-              <Link href="/weather" className="hover:text-gray-300">
+              <Link href="/weather" className="hover:text-purple-900">
                 Weather-Map
               </Link>
             </li>
